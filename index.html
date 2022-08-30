@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <script type="text/javascript" charset="utf-8" src="calc.js"></script>
+    </head> 
+<body>
+    <div>
+        <input type="text" id="visor" size="33"> </input>
+        
+            <div class="g1">                
+                <input type="button"  class="botao" value = "7" onclick= "pressionar(7);"/>
+                <input type="button"  class="botao" value = "8"onclick= "pressionar(8);"/>
+                <input type="button"  class="botao" value = "9"onclick= "pressionar(9);"/>
+                <input type="button"  class="botao"value = "+"onclick= "pressionar('+');"/>
+            </div>
+            <div class="g2">
+                <input type="button"  class="botao" value = "4"onclick= "pressionar(4);"/>
+                <input type="button"  class="botao" value = "5"onclick= "pressionar(5);"/>
+                <input type="button"  class="botao" value = "6"onclick= "pressionar(6);"/>
+                <input type="button"  class="botao" value = "-"onclick= "pressionar('-');"/>
+            </div>
+            <div class="g3">
+                <input type="button"  class="botao" value = "1" onclick="pressionar(1);"/>
+                <input type="button"  class="botao" value = "2"onclick= "pressionar(2);"/>
+                <input type="button"  class="botao" value = "3"onclick= "pressionar(3);"/>
+                <input type="button"  class="botao" value = "*"onclick= "pressionar('*');"/>
+            </div>
+        
+            <div class="g4">
+                <input type="button"  class="botao" value = "0"onclick= "pressionar(0);"/>
+                <input type="button"  class="botao" value = "/"onclick= "pressionar('/');"/>
+                <input type="button" class="botao" value="="onclick= "calcular();"/>
+                <input type="submit" class="botao" value="C" onclick="limpar();"/>
+            </div>
+        
+
+
+    </div>
+
+
+    
+
+</body>
+</html>
