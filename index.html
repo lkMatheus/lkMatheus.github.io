@@ -1,46 +1,41 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <script type="text/javascript" charset="utf-8" src="calc.js"></script>
-    </head> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-    <div>
-        <input type="text" id="visor" size="33"> </input>
+    <div class="opcoes">
+        <button onclick="Cadastrar();">Cadastrar</button>
+        <button onclick="Buscar();">Buscar</button>
+        <button onclick="Removera();">Remover</button>
+        <input type="button" value="Listar" onclick="print();">
         
-            <div class="g1">                
-                <input type="button"  class="botao" value = "7" onclick= "pressionar(7);"/>
-                <input type="button"  class="botao" value = "8"onclick= "pressionar(8);"/>
-                <input type="button"  class="botao" value = "9"onclick= "pressionar(9);"/>
-                <input type="button"  class="botao"value = "+"onclick= "pressionar('+');"/>
-            </div>
-            <div class="g2">
-                <input type="button"  class="botao" value = "4"onclick= "pressionar(4);"/>
-                <input type="button"  class="botao" value = "5"onclick= "pressionar(5);"/>
-                <input type="button"  class="botao" value = "6"onclick= "pressionar(6);"/>
-                <input type="button"  class="botao" value = "-"onclick= "pressionar('-');"/>
-            </div>
-            <div class="g3">
-                <input type="button"  class="botao" value = "1" onclick="pressionar(1);"/>
-                <input type="button"  class="botao" value = "2"onclick= "pressionar(2);"/>
-                <input type="button"  class="botao" value = "3"onclick= "pressionar(3);"/>
-                <input type="button"  class="botao" value = "*"onclick= "pressionar('*');"/>
-            </div>
-        
-            <div class="g4">
-                <input type="button"  class="botao" value = "0"onclick= "pressionar(0);"/>
-                <input type="button"  class="botao" value = "/"onclick= "pressionar('/');"/>
-                <input type="button" class="botao" value="="onclick= "calcular();"/>
-                <input type="submit" class="botao" value="C" onclick="limpar();"/>
-            </div>
-        
+    </div>
 
+    <div id ="display">
 
+    
+    
+
+    </div>
+    <div class="info" id="Inf">
+        <p>Cadastrar ID:<input type="text" id="CadastrarID" placeholder="ID"></p>
+        <p>Cadastrar Nome:<input type="text" id="CadastrarNome" placeholder = "Nome"></p>
+        <p>Cadastrar Telefone:<input type="text" id="CadastrarTelefone" placeholder="Telefone"></p>
+        <button onclick="Salvar()">Salvar</button>
+        <p>Remover:<input type="text" id="Remove" placeholder ="Remover"></p>
+        <button onclick ="Remover();">Ok</button>
+        <p>Buscar:  <input type="text" id="Buscar" placeholder="Busca"></p>
+        <button onclick="Procura();">Ok</button>
     </div>
 
 
-    
 
 </body>
 </html>
